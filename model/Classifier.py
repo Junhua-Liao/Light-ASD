@@ -3,6 +3,7 @@ from torch import nn
 
 
 class BGRU(nn.Module):
+    
     def __init__(self, channel):
         super(BGRU, self).__init__()
 
