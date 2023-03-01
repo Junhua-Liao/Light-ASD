@@ -6,26 +6,33 @@ This repository contains code and models for our [paper](https://ieeexplore.ieee
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
 
 
-### Setup 
+***
 
-1) Download the model weights and place them in the `weights` folder:
+### Evaluate on AVA-Activespeaker dataset 
+
+#### Data preparation
+
+The following script can be used to download and prepare the AVA dataset for training.
+
+```
+python trainTalkNet.py --dataPathAVA AVADataPath --download 
+```
+
+#### Training
+Then you can train TalkNet in AVA end-to-end by using:
+```
+python trainTalkNet.py --dataPathAVA AVADataPath
+```
+`exps/exps1/score.txt`: output score file, `exps/exp1/model/model_00xx.model`: trained model, `exps/exps1/val_res.csv`: prediction for val set.
 
 
-Model weights:
-- [ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)
+#### Pretrained model
+Download our model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) and place it in the `weight` folder. It performs `mAP: 94.1` in the validation set. You can check it by using: 
+```
+python trainTalkNet.py --dataPathAVA AVADataPath --evaluation
+```
+***
 
-2) Download the dataset and decompress it in the `data` folder:
-
-
-Dataset:
-- [OcclusionDataSet-MM20](https://junhua-liao.github.io/Occlusion-Detection/)
-
-  
-3) Set up dependencies: 
-
-    ```shell
-    pip install -r requirements.txt
-    ```
 
 ### Usage 
 
@@ -37,7 +44,7 @@ Dataset:
 
 ### Citation
 
-Please cite our papers if you use this code or any of the models. 
+Please cite our papers if you use this code or model. 
 
 ```
 @inproceedings{liao2023light,
