@@ -10,7 +10,6 @@ This repository contains code and models for our [paper](https://ieeexplore.ieee
 ### Evaluate on AVA-Activespeaker dataset 
 
 #### Data preparation
-
 The following script can be used to download and prepare the AVA dataset for training.
 ```
 python trainTalkNet.py --dataPathAVA AVADataPath --download 
@@ -26,7 +25,7 @@ python train.py --dataPathAVA AVADataPath
 #### Pretrained model
 Download our model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) and place it in the `weight` folder. It performs `mAP: 94.1` in the validation set. You can check it by using: 
 ```
-python trainTalkNet.py --dataPathAVA AVADataPath --evaluation
+python train.py --dataPathAVA AVADataPath --evaluation
 ```
 ***
 
@@ -42,7 +41,6 @@ Please cite our papers if you use this code or model.
   title={A Light Weight Model for Active Speaker Detection},
   author={Liao, Junhua and Duan, Haihan and Feng, Kanghui and Zhao, Wanbing and Yang, Yanbing and Chen, Liangyin},
   booktitle={CVPR},
-  pages={},
   year={2023},
   organization={IEEE}
 }
