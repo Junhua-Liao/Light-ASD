@@ -22,16 +22,29 @@ python train.py --dataPathAVA AVADataPath
 ```
 `exps/exps1/score.txt`: output score file, `exps/exp1/model/model_00xx.model`: trained model, `exps/exps1/val_res.csv`: prediction for val set.
 
-#### Pretrained model
+#### Testing
 Download our model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) and place it in the `weight` folder. It performs `mAP: 94.1` in the validation set. You can check it by using: 
 ```
 python train.py --dataPathAVA AVADataPath --evaluation
 ```
 ***
 
+### Evaluate on Columbia ASD dataset
 
+#### Testing
+Download the model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) we trained on the AVA dataset and place it in the `weight` folder. You can check it by using: 
 
+```
+python Columbia_test.py --evalCol --colSavePath colDataPath
+```
 
+Also, Columnbia ASD dataset and the labels will be downloaded into `colDataPath`. Finally you can get the following F1 result.
+
+| Name |  Bell  |  Boll  |  Lieb  |  Long  |  Sick  |  Avg.  |
+|----- | ------ | ------ | ------ | ------ | ------ | ------ |
+|  F1  |  82.7  |  75.7  |  87.0  |  74.5  |  85.4  |  81.1  |
+
+***
 ### Citation
 
 Please cite our papers if you use this code or model. 
