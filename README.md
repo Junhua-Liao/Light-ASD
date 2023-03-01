@@ -14,6 +14,7 @@ The following script can be used to download and prepare the AVA dataset for tra
 ```
 python trainTalkNet.py --dataPathAVA AVADataPath --download 
 ```
+The AVA dataset and the labels will be downloaded into `AVADataPath`.
 
 #### Training
 Then you can train model in AVA end-to-end by using:
@@ -27,27 +28,26 @@ Download our model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d
 ```
 python train.py --dataPathAVA AVADataPath --evaluation
 ```
-***
 
+
+***
 ### Evaluate on Columbia ASD dataset
 
 #### Testing
 Download the model weight([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) we trained on the AVA dataset and place it in the `weight` folder. You can check it by using: 
-
 ```
 python Columbia_test.py --evalCol --colSavePath colDataPath
 ```
-
-Also, Columnbia ASD dataset and the labels will be downloaded into `colDataPath`. Finally you can get the following F1 result.
-
+The Columnbia ASD dataset and the labels will be downloaded into `colDataPath`. Finally you can get the following F1 result.
 | Name |  Bell  |  Boll  |  Lieb  |  Long  |  Sick  |  Avg.  |
 |----- | ------ | ------ | ------ | ------ | ------ | ------ |
-|  F1  |  82.7  |  75.7  |  87.0  |  74.5  |  85.4  |  81.1  |
+|  F1  |  82.7% |  75.7% |  87.0% |  74.5% |  85.4% |  81.1% |
+
 
 ***
 ### Citation
 
-Please cite our papers if you use this code or model. 
+Please cite our paper if you use this code or model. 
 
 ```
 @inproceedings{liao2023light,
