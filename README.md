@@ -61,5 +61,5 @@ Please cite our paper if you use this code or model.
 
 ***
 ### Acknowledgments
-
+Thanks for the support of TaoRuijie's open source [repository](https://github.com/TaoRuijie/TalkNet-ASD) for this research
 
