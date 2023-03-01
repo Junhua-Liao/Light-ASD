@@ -5,8 +5,10 @@ from model.Classifier import BGRU
 from model.Encoder import visual_encoder, audio_encoder
 
 class ASD_Model(nn.Module):
+
     def __init__(self):
         super(ASD_Model, self).__init__()
+        
         self.visualEncoder  = visual_encoder()
         self.audioEncoder  = audio_encoder()
         self.GRU = BGRU(128)
