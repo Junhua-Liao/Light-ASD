@@ -10,14 +10,14 @@ This repository contains code and models for our [paper](https://ieeexplore.ieee
 ### Evaluate on AVA-Activespeaker dataset 
 
 #### Data preparation
-The following script can be used to download and prepare the AVA dataset for training.
+Use the following code to download and preprocess the AVA dataset.
 ```
 python trainTalkNet.py --dataPathAVA AVADataPath --download 
 ```
 The AVA dataset and the labels will be downloaded into `AVADataPath`.
 
 #### Training
-Then you can train model in AVA end-to-end by using:
+You can train the model on the AVA dataset by using:
 ```
 python train.py --dataPathAVA AVADataPath
 ```
@@ -58,3 +58,7 @@ Please cite our paper if you use this code or model.
   organization={IEEE}
 }
 ```
+
+***
+### Acknowledgments
+
