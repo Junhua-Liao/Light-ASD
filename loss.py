@@ -8,7 +8,7 @@ class lossAV(nn.Module):
 		self.criterion = nn.BCELoss()
 		self.FC        = nn.Linear(128, 2)
 		
-	def forward(self, x, labels=None, r = 1):	
+	def forward(self, x, labels = None, r = 1):	
 		x = x.squeeze(1)
 		x = self.FC(x)
 		if labels == None:

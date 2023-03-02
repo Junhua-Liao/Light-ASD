@@ -23,7 +23,7 @@ def main():
     parser.add_argument('--evalDataType', type=str, default="val", help='Only for AVA, to choose the dataset for evaluation, val or test')
     # For download dataset only, for evaluation only
     parser.add_argument('--downloadAVA',     dest='downloadAVA', action='store_true', help='Only download AVA dataset and do related preprocess')
-    parser.add_argument('--evaluation',      dest='evaluation', action='store_true', help='Only do evaluation by using pretrained model [pretrain_AVA.model]')
+    parser.add_argument('--evaluation',      dest='evaluation', action='store_true', help='Only do evaluation by using pretrained model [pretrain_AVA_CVPR.model]')
     args = parser.parse_args()
     # Data loader
     args = init_args(args)
@@ -46,8 +46,8 @@ def main():
 
     if args.evaluation == True:
         s = ASD(**vars(args))
-        s.loadParameters('weight/pretrain_AVA.model')
-        print("Model %s loaded from previous state!"%('pretrain_AVA.model'))
+        s.loadParameters('weight/pretrain_AVA_CVPR.model')
+        print("Model %s loaded from previous state!"%('pretrain_AVA_CVPR.model'))
         mAP = s.evaluate_network(loader = valLoader, **vars(args))
         print("mAP %2.2f%%"%(mAP))
         quit()
