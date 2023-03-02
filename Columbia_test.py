@@ -201,7 +201,7 @@ def extract_MFCC(file, outPath):
 	numpy.save(featuresPath, mfcc)
 
 def evaluate_network(files, args):
-	# GPU: active speaker detection by pretrained TalkNet
+	# GPU: active speaker detection by pretrained model
 	s = ASD()
 	s.loadParameters(args.pretrainModel)
 	sys.stderr.write("Model %s loaded from previous state! \r\n"%args.pretrainModel)
@@ -229,7 +229,7 @@ def evaluate_network(files, args):
 		length = min((audioFeature.shape[0] - audioFeature.shape[0] % 4) / 100, videoFeature.shape[0])
 		audioFeature = audioFeature[:int(round(length * 100)),:]
 		videoFeature = videoFeature[:int(round(length * 25)),:,:]
-		allScore = [] # Evaluation use TalkNet
+		allScore = [] # Evaluation use model
 		for duration in durationSet:
 			batchSize = int(math.ceil(length / duration))
 			scores = []
@@ -433,7 +433,7 @@ def main():
 	fil = open(savePath, 'rb')
 	vidTracks = pickle.load(fil)
 
-	# Active Speaker Detection by TalkNet
+	# Active Speaker Detection
 	files = glob.glob("%s/*.avi"%args.pycropPath)
 	files.sort()
 	scores = evaluate_network(files, args)
