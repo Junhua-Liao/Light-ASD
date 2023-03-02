@@ -12,7 +12,7 @@ This repository contains the code and model weight for our [paper](https://ieeex
 #### Data preparation
 Use the following code to download and preprocess the AVA dataset.
 ```
-python trainTalkNet.py --dataPathAVA AVADataPath --download 
+python train.py --dataPathAVA AVADataPath --download 
 ```
 The AVA dataset and the labels will be downloaded into `AVADataPath`.
 
