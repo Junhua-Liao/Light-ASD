@@ -34,11 +34,11 @@ python train.py --dataPathAVA AVADataPath --evaluation
 ### Evaluate on Columbia ASD dataset
 
 #### Testing
-Download the model weight ([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) we trained on the AVA dataset and place it in the `weight` folder. You can check it by using: 
+Download the model weight ([ICASSP_Model.pth.tar](https://drive.google.com/file/d/1nJLdf1hqvx22LhD_uDOT5O0JeDmapSqN/view?usp=sharing)) we trained on the AVA dataset and place it in the `weight` folder. Then run the following code.
 ```
 python Columbia_test.py --evalCol --colSavePath colDataPath
 ```
-The Columnbia ASD dataset and the labels will be downloaded into `colDataPath`. Finally you can get the following F1 result.
+The Columbia ASD dataset and the labels will be downloaded into `colDataPath`. And you can get the following F1 result.
 | Name |  Bell  |  Boll  |  Lieb  |  Long  |  Sick  |  Avg.  |
 |----- | ------ | ------ | ------ | ------ | ------ | ------ |
 |  F1  |  82.7% |  75.7% |  87.0% |  74.5% |  85.4% |  81.1% |
