@@ -1,6 +1,6 @@
 ## A Light Weight Model for Active Speaker Detection
 
-This repository contains code and models for our [paper](https://ieeexplore.ieee.org/abstract/document/9746742) (Accepted by CVPR 2023):
+This repository contains the code and model weight for our [paper](https://ieeexplore.ieee.org) (Accepted by CVPR 2023):
 
 > A Light Weight Model for Active Speaker Detection  
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
