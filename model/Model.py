@@ -5,14 +5,12 @@ from model.Classifier import BGRU
 from model.Encoder import visual_encoder, audio_encoder
 
 class ASD_Model(nn.Module):
-
     def __init__(self):
         super(ASD_Model, self).__init__()
         
         self.visualEncoder  = visual_encoder()
         self.audioEncoder  = audio_encoder()
         self.GRU = BGRU(128)
-
 
     def forward_visual_frontend(self, x):
         B, T, W, H = x.shape  
@@ -21,12 +19,10 @@ class ASD_Model(nn.Module):
         x = self.visualEncoder(x)
         return x
 
-
     def forward_audio_frontend(self, x):    
         x = x.unsqueeze(1).transpose(2, 3)     
         x = self.audioEncoder(x)
         return x
-
 
     def forward_audio_visual_backend(self, x1, x2):  
         x = x1 + x2 
@@ -34,11 +30,9 @@ class ASD_Model(nn.Module):
         x = torch.reshape(x, (-1, 128))
         return x    
 
-
     def forward_visual_backend(self,x):
         x = torch.reshape(x, (-1, 128))
         return x
-
 
     def forward(self, audioFeature, visualFeature):
         audioEmbed = self.forward_audio_frontend(audioFeature)

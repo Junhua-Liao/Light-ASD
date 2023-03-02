@@ -3,7 +3,6 @@ from torch import nn
 
 
 class BGRU(nn.Module):
-    
     def __init__(self, channel):
         super(BGRU, self).__init__()
 
@@ -12,7 +11,6 @@ class BGRU(nn.Module):
         
         self.gelu = nn.GELU()
         self.__init_weight()
-
 
     def forward(self, x):
         x, _ = self.gru_forward(x)
