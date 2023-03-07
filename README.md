@@ -53,7 +53,7 @@ Please cite our paper if you use this code or model.
 @inproceedings{liao2023light,
   title={A Light Weight Model for Active Speaker Detection},
   author={Liao, Junhua and Duan, Haihan and Feng, Kanghui and Zhao, Wanbing and Yang, Yanbing and Chen, Liangyin},
-  booktitle={IEEE Conference on Computer Vision and Pattern Recognition},
+  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2023},
   organization={IEEE}
 }
