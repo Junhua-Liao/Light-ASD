@@ -24,7 +24,7 @@ python train.py --dataPathAVA AVADataPath
 `exps/exps1/score.txt`: output score file, `exps/exp1/model/model_00xx.model`: trained model, `exps/exps1/val_res.csv`: prediction for val set.
 
 #### Testing
-Download our model weight ([coming soon](https://drive.google.com)) and place it in the `weight` folder. It performs `mAP: 94.1%` in the validation set. You can check it by using: 
+Our model weights have been placed in the `weight` folder. It performs `mAP: 94.06%` in the validation set. You can check it by using: 
 ```
 python train.py --dataPathAVA AVADataPath --evaluation
 ```
@@ -34,7 +34,7 @@ python train.py --dataPathAVA AVADataPath --evaluation
 ### Evaluate on Columbia ASD dataset
 
 #### Testing
-Download the model weight ([coming soon](https://drive.google.com)) we trained on the AVA dataset and place it in the `weight` folder. Then run the following code.
+The model weights we trained on the AVA dataset have been placed in the `weight` folder. Then run the following code.
 ```
 python Columbia_test.py --evalCol --colSavePath colDataPath
 ```
