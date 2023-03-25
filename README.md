@@ -1,5 +1,5 @@
 ## A Light Weight Model for Active Speaker Detection
-
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-light-weight-model-for-active-speaker/audio-visual-active-speaker-detection-on-ava)](https://paperswithcode.com/sota/audio-visual-active-speaker-detection-on-ava?p=a-light-weight-model-for-active-speaker)
 This repository contains the code and model weight for our [paper](https://arxiv.org/pdf/2303.04439.pdf) (Accepted by CVPR 2023):
 
 > A Light Weight Model for Active Speaker Detection  
