@@ -1,7 +1,7 @@
 ## A Light Weight Model for Active Speaker Detection
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-light-weight-model-for-active-speaker/audio-visual-active-speaker-detection-on-ava)](https://paperswithcode.com/sota/audio-visual-active-speaker-detection-on-ava?p=a-light-weight-model-for-active-speaker)
 
-This repository contains the code and model weight for our [paper](https://arxiv.org/pdf/2303.04439.pdf) (Accepted by CVPR 2023):
+This repository contains the code and model weight for our [paper]([https://arxiv.org/pdf/2303.04439.pdf](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_A_Light_Weight_Model_for_Active_Speaker_Detection_CVPR_2023_paper.pdf)) (Accepted by CVPR 2023):
 
 > A Light Weight Model for Active Speaker Detection  
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
@@ -51,12 +51,13 @@ The Columbia ASD dataset and the labels will be downloaded into `colDataPath`. A
 Please cite our paper if you use this code or model. 
 
 ```
-@inproceedings{liao2023light,
-  title={A Light Weight Model for Active Speaker Detection},
-  author={Liao, Junhua and Duan, Haihan and Feng, Kanghui and Zhao, Wanbing and Yang, Yanbing and Chen, Liangyin},
-  booktitle={IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2023},
-  organization={IEEE}
+@InProceedings{Liao_2023_CVPR,
+    author    = {Liao, Junhua and Duan, Haihan and Feng, Kanghui and Zhao, Wanbing and Yang, Yanbing and Chen, Liangyin},
+    title     = {A Light Weight Model for Active Speaker Detection},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {22932-22941}
 }
 ```
 
