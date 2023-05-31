@@ -1,7 +1,7 @@
 ## A Light Weight Model for Active Speaker Detection
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-light-weight-model-for-active-speaker/audio-visual-active-speaker-detection-on-ava)](https://paperswithcode.com/sota/audio-visual-active-speaker-detection-on-ava?p=a-light-weight-model-for-active-speaker)
 
-This repository contains the code and model weight for our [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_A_Light_Weight_Model_for_Active_Speaker_Detection_CVPR_2023_paper.pdf) (CVPR 2023):
+This repository contains the code and model weights for our [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_A_Light_Weight_Model_for_Active_Speaker_Detection_CVPR_2023_paper.pdf) (CVPR 2023):
 
 > A Light Weight Model for Active Speaker Detection  
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
@@ -35,7 +35,7 @@ python train.py --dataPathAVA AVADataPath --evaluation
 ### Evaluate on Columbia ASD dataset
 
 #### Testing
-The model weights we trained on the AVA dataset have been placed in the `weight` folder. Then run the following code.
+The model weights trained on the AVA dataset have been placed in the `weight` folder. Then run the following code.
 ```
 python Columbia_test.py --evalCol --colSavePath colDataPath
 ```
@@ -57,7 +57,7 @@ And you can get the following F1 result.
 ***
 ### Citation
 
-Please cite our paper if you use this code or model. 
+Please cite our paper if you use this code or model weights. 
 
 ```
 @InProceedings{Liao_2023_CVPR,
