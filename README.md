@@ -1,7 +1,7 @@
 ## A Light Weight Model for Active Speaker Detection
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-light-weight-model-for-active-speaker/audio-visual-active-speaker-detection-on-ava)](https://paperswithcode.com/sota/audio-visual-active-speaker-detection-on-ava?p=a-light-weight-model-for-active-speaker)
 
-This repository contains the code and model weight for our [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_A_Light_Weight_Model_for_Active_Speaker_Detection_CVPR_2023_paper.pdf) (Accepted by CVPR 2023):
+This repository contains the code and model weight for our [paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liao_A_Light_Weight_Model_for_Active_Speaker_Detection_CVPR_2023_paper.pdf) (CVPR 2023):
 
 > A Light Weight Model for Active Speaker Detection  
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
@@ -43,6 +43,15 @@ The Columbia ASD dataset and the labels will be downloaded into `colDataPath`. A
 | Name |  Bell  |  Boll  |  Lieb  |  Long  |  Sick  |  Avg.  |
 |----- | ------ | ------ | ------ | ------ | ------ | ------ |
 |  F1  |  82.7% |  75.7% |  87.0% |  74.5% |  85.4% |  81.1% |
+
+We have also provided the model weights fine-tuned on the TalkSet dataset. Due to space limitations, we did not exhibit it in the paper. Run the following code.
+```
+python Columbia_test.py --evalCol --pretrainModel weight/finetuning_TalkSet.model --colSavePath colDataPath
+```
+And you can get the following F1 result.
+| Name |  Bell  |  Boll  |  Lieb  |  Long  |  Sick  |  Avg.  |
+|----- | ------ | ------ | ------ | ------ | ------ | ------ |
+|  F1  |  97.7% |  86.3% |  98.2% |  99.0% |  96.3% |  95.5% |
 
 
 ***
