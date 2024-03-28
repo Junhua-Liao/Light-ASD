@@ -60,7 +60,11 @@ You can put the raw video (`.mp4` and `.avi` are both fine) into the `demo`�
 ```
 python Columbia_test.py --videoName 0001 --videoFolder demo
 ```
-You can get the output video `demo/0001/pyavi/video_out.avi`, which has marked the active speaker by green box and non-active speaker by red box.
+By default, the model loads weights trained on the AVA-ActiveSpeaker dataset. If you want to load weights fine-tuned on TalkSet, you can execute the following code.
+```
+python Columbia_test.py --videoName 0001 --videoFolder demo --pretrainModel weight/finetuning_TalkSet.model
+```
+You can obtain the output video `demo/0001/pyavi/video_out.avi`, where the active speaker is marked by a green box and the non-active speaker by a red box.
 
 
 ***
