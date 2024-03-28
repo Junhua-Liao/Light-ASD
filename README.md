@@ -55,6 +55,15 @@ And you can get the following F1 result.
 
 
 ***
+### An ASD Demo with pretrained TalkNet model
+You can put the raw video (`.mp4` and `.avi` are both fine) into the `demo` folder, such as `0001.mp4`. 
+```
+python Columbia_test.py --videoName 0001 --videoFolder demo
+```
+You can get the output video `demo/0001/pyavi/video_out.avi`, which has marked the active speaker by green box and non-active speaker by red box.
+
+
+***
 ### Citation
 
 Please cite our paper if you use this code or model weights. 
