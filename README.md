@@ -8,7 +8,7 @@ This repository contains the code and model weights for our [paper](https://open
 
 
 ***
-### Evaluate on AVA-Activespeaker dataset 
+### Evaluate on AVA-ActiveSpeaker dataset 
 
 #### Data preparation
 Use the following code to download and preprocess the AVA dataset.
