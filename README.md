@@ -55,7 +55,7 @@ And you can get the following F1 result.
 
 
 ***
-### An ASD Demo with pretrained TalkNet model
+### An ASD Demo with pretrained Light-ASD model
 You can put the raw video (`.mp4` and `.avi` are both fine) into the `demo` folder, such as `0001.mp4`. 
 ```
 python Columbia_test.py --videoName 0001 --videoFolder demo
