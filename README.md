@@ -6,6 +6,8 @@ This repository contains the code and model weights for our [paper](https://open
 > A Light Weight Model for Active Speaker Detection  
 > Junhua Liao, Haihan Duan, Kanghui Feng, Wanbing Zhao, Yanbing Yang, Liangyin Chen
 
+The extended version ([LR-ASD: Lightweight and Robust Network for Active Speaker Detection](https://junhua-liao.github.io/Junhua-Liao/publications/papers/IJCV_2025.pdf), IJCV 2025, [code](https://github.com/Junhua-Liao/LR-ASD))
+
 
 ***
 ### Evaluate on AVA-ActiveSpeaker dataset 
